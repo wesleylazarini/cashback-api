@@ -1,0 +1,18 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /api/h2
+  datasource:
+    url: jdbc:h2:mem:cashback
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+
+cashback-api:
+  url: https://mdaqk8ek5j.execute-api.us-east-1.amazonaws.com/v1/cashback?cpf=
+  token: ZXPURQOARHiMc6Y0flhRC1LVlZQVFRnm
+
+security:
+  secret: secretjwt
+  expiration: 600
